@@ -1,0 +1,119 @@
+body {
+    background-color: #edefee;
+    font-family: "Markazi-Text", serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+header {
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 1%;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: auto;
+}
+
+header:hover img {
+    transform: rotateZ(360deg);
+    transition: 1s;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    background-color: #333333;
+    padding-top: 0.5em;
+    padding-bottom: 0.5rem;
+    border-radius: 0.8em;
+    box-sizing: border-box;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    color: #eeeeee;
+    text-decoration: none;
+    margin: 3px;
+}
+
+nav li a:hover, nav li:first-child {
+    text-decoration: underline;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+    width: 100%;
+    padding: 4%;
+    margin: 0.5em;
+    border-radius: 1rem;
+    border: 1px solid #FF5A5F;
+    box-sizing: border-box;
+    background-color: #f4e5d6;
+}
+
+section .first {
+    background-image: url("off2.jpg");
+    color: #eeeeee;
+}
+
+article p:first-of-type::first-letter {
+    font-size: 1.3em;
+    font-weight: bold;    
+    line-height: 1;
+}
+
+.flex p:first-of-type::first-letter {    
+    color: #ba6f26;  
+}
+
+.flex img {
+    width: 100%;
+    height: 9rem;
+}
+
+.opening span {
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    background-color: #eeeeee;
+    height: auto;
+    width: 100%;
+    border-top: 1px solid #CCCCCC;
+    align-items: center;
+    padding: 1%;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer p {
+    border-top: 1.5px solid #495e57;
+    text-align: end;
+}
