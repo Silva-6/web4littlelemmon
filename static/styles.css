@@ -22,6 +22,29 @@ header {
     padding-bottom: 1%;
 }
 
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+  
+header {
+    animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+header img {
+    animation: 1s ease-out 0s 1 rotate;
+}
+
 header > img {
     display: block;
     margin-left: auto;
